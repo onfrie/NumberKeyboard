@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
  * Created by Dell on 2018/3/14.
  */
 
-public class InputAmountView extends LinearLayout{
+public class InputAmountView extends LinearLayout {
 
     private View root = null;
     EditText et_amount;
@@ -26,7 +26,7 @@ public class InputAmountView extends LinearLayout{
     String amountInt = "";
     private KeyboardUtil mKeyboardUtil;
 
-    public InputAmountView(Context context, @Nullable AttributeSet attrs ) {
+    public InputAmountView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         mContext = (Activity) context;
         initView(context);
@@ -92,12 +92,12 @@ public class InputAmountView extends LinearLayout{
         if (ll_price_select.getVisibility() == View.VISIBLE) {
             ll_price_select.setVisibility(View.GONE);
             return true;
-        }else{
+        } else {
             return false;
         }
     }
 
-    public void setOnTextchangedListener(OnInputCompleteListener onInputCompleteListener){
+    public void setOnTextchangedListener(OnInputCompleteListener onInputCompleteListener) {
         this.mOnInputCompleteListener = onInputCompleteListener;
     }
 
